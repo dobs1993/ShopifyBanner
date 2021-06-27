@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-container {
+    background-image: url('https://cdn.shopify.com/s/files/1/0401/5819/9965/files/NinaMade_HomePage_Hero_01.jpg?v=1621912893');
+    background-repeat: no-repeat;
+    background-position: 40% 90%;
+    height: 450px;
+    width: 1000px;
+}
+
+.img-container .text-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    justify-content: center;
+}
+
+.img-container .text-container h1 {
+    background: #626262;
+    padding-left: 0.25rem;
+    width: 42.5%;
+    font-family: 'Halant', serif;
+    font-size: 1.5rem;
+}
+
+.img-container .text-container ul {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    text-transform: uppercase;
+}
+
+.img-container .text-container ul li {
+    margin-left: 2rem;
+    padding-top: 1.2rem;
+    font-weight: bold;
+}
+
+.img-container .text-container ul li a {
+    background: #c62c21;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width:950px) {
+    .img-container .text-container ul {
+    flex-direction: column;
+}  
+}
+
+@media (max-width:490px) {
+    .img-container .text-container ul {
+    width: 60%;
+    margin-left: -1rem;
+}  
+}
+
+
