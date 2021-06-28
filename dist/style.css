@@ -21,12 +21,14 @@ ul {
     list-style-type: none;
 }
 
+.main-container {
+    width: 100vw;
+    height: 500px;
+}
+
 .img-container {
-    background-image: url('https://cdn.shopify.com/s/files/1/0401/5819/9965/files/NinaMade_HomePage_Hero_01.jpg?v=1621912893');
-    background-repeat: no-repeat;
-    background-position: 40% 90%;
-    height: 450px;
-    width: 1000px;
+    background: url('https://cdn.shopify.com/s/files/1/0401/5819/9965/files/NinaMade_HomePage_Hero_01.jpg?v=1621912893') no-repeat right center/cover;
+    height: 100%;
 }
 
 .img-container .text-container {
@@ -39,44 +41,76 @@ ul {
 
 .img-container .text-container h1 {
     background: #626262;
-    padding-left: 0.25rem;
-    width: 42.5%;
+    padding: 1rem 0.75rem;
+    width: 35%;
     font-family: 'Halant', serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .img-container .text-container ul {
     display: flex;
     justify-content: center;
-    width: 35%;
+    width: 30%;
     text-transform: uppercase;
 }
 
 .img-container .text-container ul li {
-    margin-left: 2rem;
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
     font-weight: bold;
+    margin-left: 3rem;
 }
 
 .img-container .text-container ul li a {
     background: #c62c21;
     color: #fff;
-    padding: 0.25rem 0.75rem;
+    padding: 0.45rem 0.95rem;
     text-decoration: none;
     border-radius: 5px;
+    transition: all 1s ease-in-out;
 }
 
-@media (max-width:950px) {
-    .img-container .text-container ul {
-    flex-direction: column;
-}  
+.img-container .text-container ul li a:hover {
+    opacity: 0.7;
 }
 
-@media (max-width:490px) {
-    .img-container .text-container ul {
+/* MOBILE */
+
+@media (max-width: 1256px) {
+    .img-container .text-container h1 {
+    padding: 0.75rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.img-container .text-container ul {
     width: 60%;
-    margin-left: -1rem;
-}  
+    flex-direction: column;
+}
 }
 
+@media (max-height: 740px) and (max-width:600px) {
+    .img-container .text-container h1 {
+    background: rgba(98, 98, 98, 0.7);
+    padding: 0.75rem 0.5rem;
+    width: 70%;
+    font-size: 1rem;
+}
 
+.img-container .text-container ul li a {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.95rem;
+}
+}
+
+@media (max-width: 600px){
+    .img-container .text-container h1 {
+    background: rgba(98, 98, 98, 0.7);
+    padding: 0.75rem 0.5rem;
+    width: 70%;
+    font-size: 1.25rem;
+}
+
+.img-container .text-container ul li a {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.95rem;
+}
+}
